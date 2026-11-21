@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#10060c"
+    />
+    <meta
+      name="description"
+      content="A little corner of the world, made with love."
+    />
+    <title>Access Our World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js?v=5" defer></script>
+  </head>
+  <body>
+    <main class="login-page">
+      <div class="ambient-glow ambient-glow--top" aria-hidden="true"></div>
+      <div class="ambient-glow ambient-glow--bottom" aria-hidden="true"></div>
+      <div class="heart-field" aria-hidden="true">
+        <span class="heart heart--one">♥</span>
+        <span class="heart heart--two">♥</span>
+        <span class="heart heart--three">♥</span>
+        <span class="heart heart--four">♥</span>
+        <span class="heart heart--five">♥</span>
+        <span class="heart heart--six">♥</span>
+        <span class="heart heart--seven">♥</span>
+        <span class="heart heart--eight">♥</span>
+        <span class="heart heart--nine">♥</span>
+        <span class="heart heart--ten">♥</span>
+      </div>
+
+      <section class="login-card" aria-labelledby="page-title">
+        <div class="lock-emblem" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="presentation">
+            <path
+              d="M14 20v-5a10 10 0 0 1 20 0v5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.6"
+              stroke-linecap="round"
+            />
+            <rect x="10" y="19" width="28" height="22" rx="8" fill="currentColor" />
+            <path
+              d="M24 27a3 3 0 0 0-1.7 5.47V36h3.4v-3.53A3 3 0 0 0 24 27Z"
+              fill="#9e174a"
+            />
+          </svg>
+        </div>
+
+        <p class="eyebrow">A little something, just for you</p>
+        <h1 id="page-title">Access Our <span>World</span></h1>
+        <p class="subtitle">A special place, just for you <span aria-hidden="true">♥</span></p>
+
+        <form class="login-form" id="login-form">
+          <label class="input-wrap" for="name">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.2" />
+              <path d="M5.5 19c.5-3.2 2.8-5 6.5-5s6 1.8 6.5 5" />
+            </svg>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              aria-label="Your name"
+              autocomplete="username"
+              required
+            />
+          </label>
+
+          <label class="input-wrap" for="password">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="10" width="14" height="10" rx="2.5" />
+              <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+            </svg>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Birthday Date"
+              aria-label="Your birthday date"
+              autocomplete="current-password"
+              required
+            />
+            <button
+              class="visibility-toggle"
+              id="visibility-toggle"
+              type="button"
+              aria-label="Show password"
+              aria-pressed="false"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2.8 12s3.2-5.2 9.2-5.2 9.2 5.2 9.2 5.2-3.2 5.2-9.2 5.2S2.8 12 2.8 12Z" />
+                <circle cx="12" cy="12" r="2.4" />
+              </svg>
+            </button>
+          </label>
+
+          <button class="submit-button" type="submit">
+            <span>Unlock Surprise</span>
+            <span class="button-heart" aria-hidden="true">♥</span>
+            <span class="button-shine" aria-hidden="true"></span>
+          </button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="card-footer">
+          <span class="footer-heart" aria-hidden="true">♥</span>
+          <span>Made for you</span>
+          <span class="footer-heart" aria-hidden="true">♥</span>
+        </div>
+      </section>
+
+      <section class="birthday-card" id="birthday-card" aria-labelledby="birthday-title" hidden>
+        <div class="portrait-frame">
+          <img
+            class="portrait"
+            src="assets/parini.jpg"
+            alt="Parini in a beautiful orange and teal saree"
+          />
+          <span class="portrait-heart portrait-heart--top" aria-hidden="true">♥</span>
+          <span class="portrait-heart portrait-heart--bottom" aria-hidden="true">♥</span>
+        </div>
+        <div class="birthday-copy">
+          <p class="eyebrow">Today is all about you</p>
+          <h1 id="birthday-title" tabindex="-1">Happy Birthday,<br /><span>Parini Maa</span> <span class="title-heart" aria-hidden="true">♡</span></h1>
+          <p class="birthday-message">
+            Wishing you a day filled with love, laughter, and all the little
+            things that make you smile. May this year bring you beautiful
+            memories and everything your heart wishes for.
+          </p>
+          <div class="birthday-divider" aria-hidden="true"><span>♥</span></div>
+          <button class="replay-button" id="replay-button" type="button">
+            <span aria-hidden="true">♥</span> Back to the surprise
+          </button>
+          <button class="replay-button next-button" id="next-page-button" type="button">
+            Next surprise <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="memories-card" id="memories-card" aria-labelledby="memories-title" hidden>
+        <header class="memories-heading">
+          <p class="eyebrow">♡ A little collection of you ♡</p>
+          <h1 id="memories-title" tabindex="-1">My <span>Precious One</span></h1>
+          <p class="memories-subtitle">The one who makes my heart smile</p>
+        </header>
+        <div class="memory-gallery">
+          <figure class="memory-photo memory-photo--one">
+            <span class="memory-heart" aria-hidden="true">♥</span>
+            <img src="assets/memory-01.jpg" alt="Parini smiling in a bright saree" />
+          </figure>
+          <figure class="memory-photo memory-photo--two">
+            <span class="memory-heart" aria-hidden="true">♥</span>
+            <img src="assets/memory-02.jpg" alt="A lovely candid moment with Parini" />
+          </figure>
+          <figure class="memory-photo memory-photo--three">
+            <span class="memory-heart" aria-hidden="true">♥</span>
+            <img src="assets/memory-03.jpg" alt="Parini in a teal saree" />
+          </figure>
+          <figure class="memory-photo memory-photo--four">
+            <span class="memory-heart" aria-hidden="true">♥</span>
+            <img src="assets/memory-04.jpg" alt="A smiling selfie of Parini" />
+          </figure>
+        </div>
+        <details class="memory-note">
+          <summary><span aria-hidden="true">♥</span> Read My Little Note <span aria-hidden="true">♥</span></summary>
+          <div class="moonlight-verses">
+            <p>Nilava paathadhum azhaga irukku nu nenachen,<br />Unna paathadhum dhaan nilavum azhagu nu purinjadhu… ✨</p>
+            <p>Andha nilavu iravukku mattum sontham,<br />Aana en manasula odura ovvoru ninaivum un sontham…! 🤍</p>
+            <p>Nilava rasikka vaanam thevai,<br />Unna rasikka enakku oru nodi podhum… 🫶🏻</p>
+            <p>Nilavu megathukulla marainjaalum azhagu,<br />Nee kovathula irundhaalum enakku azhagu… 🥹💗</p>
+          </div>
+        </details>
+        <div>
+          <button class="replay-button" id="previous-page-button" type="button">
+            <span aria-hidden="true">←</span> Back to birthday
+          </button>
+          <button class="replay-button" id="video-page-button" type="button">
+            Next surprise <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="video-card" id="video-card" aria-label="Birthday video" hidden>
+        <header class="memories-heading">
+          <p class="eyebrow">♡ A little something for you ♡</p>
+          <p class="memories-subtitle">A little video made special for you</p>
+        </header>
+        <video controls playsinline webkit-playsinline preload="metadata" aria-label="A birthday video for Parini">
+          <source src="assets/birthday-video.mp4?v=4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <div class="video-actions">
+          <button class="replay-button" id="previous-video-page-button" type="button">
+            <span aria-hidden="true">←</span> Back to notes
+          </button>
+          <button class="replay-button" id="themes-page-button" type="button">
+            Six little worlds <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="themes-card" id="themes-card" aria-labelledby="themes-title" hidden>
+        <header class="memories-heading">
+          <p class="eyebrow">♡ Six moments, six moods ♡</p>
+          <h1 id="themes-title" tabindex="-1">My <span>Six Little Worlds</span></h1>
+          <p class="memories-subtitle">Every picture holds a different kind of you</p>
+        </header>
+        <div class="theme-gallery">
+          <figure class="theme-photo theme-photo--rose">
+            <img src="assets/theme-01.jpg" alt="A special moment with a soft rose theme" />
+            <figcaption>Soft &amp; Lovely</figcaption>
+          </figure>
+          <figure class="theme-photo theme-photo--gold">
+            <img src="assets/theme-02.jpg" alt="A special moment with a golden theme" />
+            <figcaption>Golden Smile</figcaption>
+          </figure>
+          <figure class="theme-photo theme-photo--violet">
+            <img src="assets/theme-03.jpg" alt="A special moment with a violet theme" />
+            <figcaption>Dreamy Soul</figcaption>
+          </figure>
+          <figure class="theme-photo theme-photo--mint">
+            <img src="assets/theme-04.jpg" alt="A special moment with a mint theme" />
+            <figcaption>Fresh Heart</figcaption>
+          </figure>
+          <figure class="theme-photo theme-photo--sunset">
+            <img src="assets/theme-05.jpg" alt="A special moment with a sunset theme" />
+            <figcaption>Warm Glow</figcaption>
+          </figure>
+          <figure class="theme-photo theme-photo--midnight">
+            <img src="assets/theme-06.jpg" alt="A special moment with a midnight theme" />
+            <figcaption>Moonlit You</figcaption>
+          </figure>
+        </div>
+        <audio controls preload="metadata" aria-label="Audio for the six little worlds">
+          <source src="assets/six-worlds-audio.mpeg" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <button class="replay-button" id="previous-themes-page-button" type="button">
+          <span aria-hidden="true">←</span> Back to video
+        </button>
+        <button class="replay-button" id="birthday-wish-page-button" type="button">
+          One last surprise <span aria-hidden="true">→</span>
+        </button>
+      </section>
+
+      <section class="birthday-wish-card" id="birthday-wish-card" aria-labelledby="birthday-wish-title" hidden>
+        <header class="memories-heading">
+          <p class="eyebrow">♡ One more little memory ♡</p>
+          <h1 id="birthday-wish-title" tabindex="-1">Happy Birthday <span>Parini</span></h1>
+        </header>
+        <img
+          class="birthday-wish-photo"
+          src="assets/birthday-couple.jpeg"
+          alt="A happy moment together among the flowers"
+        />
+        <p class="birthday-wish-message">
+          Happy Birthday Parini. God bless you and make your year
+          filled with love, laughter, and all the happiness you deserve.
+        </p>
+        <audio controls preload="metadata" aria-label="Birthday audio message">
+          <source src="assets/birthday-wish-audio.mpeg" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <button class="replay-button" id="previous-birthday-wish-page-button" type="button">
+          <span aria-hidden="true">←</span> Back to six little worlds
+        </button>
+      </section>
+
+      <p class="page-note" id="page-note">A tiny key to a world full of memories</p>
+    </main>
+  </body>
+</html>
